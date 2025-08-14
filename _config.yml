@@ -1,0 +1,25 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: PySCF Notebooks
+author: Egor Trushin
+logo: pyscf-logo.jpg
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+  timeout: 120
+
+launch_buttons:
+  notebook_interface: jupyterlab
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/EgorTrushin/pyscf-notebooks  # Online location of your book
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true

@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: notebooks/gga_xc_potential
+- file: notebooks/Tc_from_virial_theorem
+- file: notebooks/RPA_W4-11RE_dataset
+- file: notebooks/IPs_via_various_relationships
+- file: notebooks/relaxed_dm_for_ccsd
+- file: notebooks/transformation_of_dm
