@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -445,7 +445,7 @@
 <h1>GGA exchange-correlation potentials in real space<a class="headerlink" href="#gga-exchange-correlation-potentials-in-real-space" title="Link to this heading">#</a></h1>
 <p><strong>Author:</strong> Egor Trushin<br />
 <strong>Date created:</strong> 25/04/2025<br />
-<strong>Last modified:</strong> 07/08/2025</p>
+<strong>Last modified:</strong> 24/10/2026</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The aim of this notebook is to introduce a codebase that allows the exchange-correlation (XC) potential of the generalized gradient approximation (GGA) density functional theory (DFT) method to be evaluated in real space using PySCF. Solving the self-consistent Kohn-Sham (KS) equation in Gaussian basis set codes does not require the construction of the XC potential in real space, <span class="math notranslate nohighlight">\(v_{xc}(\mathbf{r})\)</span>. During the self-consistent solution of the KS equations, <span class="math notranslate nohighlight">\(v_{xc}\)</span> is constructed in the atomic orbital (AO) basis set representation. The construction of <span class="math notranslate nohighlight">\(v_{xc}^{GGA}\)</span> in AO basis set representation is done avoiding second order derivatives of density, whereas these derivatives are required if we want to construct <span class="math notranslate nohighlight">\(v_{xc}^{GGA}\)</span> in real space. Therefore, we need a bit of coding to obtain real-space GGA XC potential.</p>
