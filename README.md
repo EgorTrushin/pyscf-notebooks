@@ -29,7 +29,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The notebooks import helper modules from `notebooks/sets/` and read data from `notebooks/json/` relative to their own directory, which is where Jupyter starts each notebook.
+The notebooks import helper modules from `notebooks/sets/` and `notebooks/utils/` and read data from `notebooks/json/` relative to their own directory, which is where Jupyter starts each notebook.
 
 ## Building the book
 

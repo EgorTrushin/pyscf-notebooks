@@ -19,5 +19,5 @@ package = false
 [tool.ruff]
 line-length = 120
 target-version = "py312"
-# long-line geometry data
-extend-exclude = ["notebooks/sets"]
+# long-line geometry data; verbatim copies from PyOEP, linted there
+extend-exclude = ["notebooks/sets", "notebooks/utils"]
