@@ -16,82 +16,84 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/RPA_W4-11RE_dataset';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="IPs via various relationships" href="IPs_via_various_relationships.html" />
     <link rel="prev" title="Correlation contribution to the kinetic energy from virial theorem" href="Tc_from_virial_theorem.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -99,7 +101,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,15 +108,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -124,7 +169,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -154,21 +200,17 @@
     
     
     <img src="../_static/pyscf-logo.jpg" class="logo__image only-light" alt="PySCF Notebooks - Home"/>
-    <script>document.write(`<img src="../_static/pyscf-logo.jpg" class="logo__image only-dark" alt="PySCF Notebooks - Home"/>`);</script>
+    <img src="../_static/pyscf-logo.jpg" class="logo__image only-dark pst-js-only" alt="PySCF Notebooks - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -194,9 +236,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -326,7 +373,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -340,25 +387,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -380,7 +419,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w4-11re-dataset">W4-11RE dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pbe-and-rpa-pbe">PBE and RPA@PBE</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aug-cc-pwcvtz-orbital-basis-set">aug-cc-pwCVTZ orbital basis set</a></li>
@@ -434,31 +473,31 @@ document.write(`
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;sans-serif&#39;</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.unicode_minus&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">rcParams</span><span class="p">[</span><span class="s1">'font.family'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'sans-serif'</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">'axes.unicode_minus'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">"json"</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">"json"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PySCF version:&quot;</span><span class="p">,</span> <span class="n">pyscf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"PySCF version:"</span><span class="p">,</span> <span class="n">pyscf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PySCF version: 2.10.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PySCF version: 2.14.0
 </pre></div>
 </div>
 </div>
@@ -468,7 +507,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">atom_input</span><span class="p">(</span><span class="n">charges</span><span class="p">,</span> <span class="n">xyz</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Construct input for mol.atom from charges and xyz.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Construct input for mol.atom from charges and xyz."""</span>
     <span class="n">atom_input_</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">charges</span><span class="p">)):</span>
         <span class="n">atom_input_</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">charges</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">xyz</span><span class="p">[</span><span class="n">i</span><span class="p">])])</span>
@@ -480,7 +519,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">calc_one_system</span><span class="p">(</span><span class="n">atoms</span><span class="p">,</span> <span class="n">coords</span><span class="p">,</span> <span class="n">charge</span><span class="p">,</span> <span class="n">spin</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="n">xc</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Perform calculation for given system, basis and xc-functional.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Perform calculation for given system, basis and xc-functional."""</span>
     <span class="n">mol</span> <span class="o">=</span> <span class="n">gto</span><span class="o">.</span><span class="n">Mole</span><span class="p">()</span>
     <span class="n">mol</span><span class="o">.</span><span class="n">verbose</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">mol</span><span class="o">.</span><span class="n">atom</span> <span class="o">=</span> <span class="n">atom_input</span><span class="p">(</span><span class="n">atoms</span><span class="p">,</span> <span class="n">coords</span><span class="p">)</span>
@@ -506,16 +545,16 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">eval_ds</span><span class="p">(</span><span class="n">reactions</span><span class="p">,</span> <span class="n">etot</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Evaluate dataset.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Evaluate dataset."""</span>
     <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">e_calc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">reactions</span><span class="p">))</span>
     <span class="n">e_ref</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">reactions</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">reactions</span><span class="p">):</span>
         <span class="n">ec</span> <span class="o">=</span> <span class="mf">0.0</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;stoichiometry&quot;</span><span class="p">])):</span>
-            <span class="n">ec</span> <span class="o">+=</span> <span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;stoichiometry&quot;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">etot</span><span class="p">[</span><span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;systems&quot;</span><span class="p">][</span><span class="n">j</span><span class="p">]]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"stoichiometry"</span><span class="p">])):</span>
+            <span class="n">ec</span> <span class="o">+=</span> <span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"stoichiometry"</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">etot</span><span class="p">[</span><span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"systems"</span><span class="p">][</span><span class="n">j</span><span class="p">]]</span>
         <span class="n">e_calc</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">ec</span> <span class="o">*</span> <span class="mf">627.50960803059</span>
-        <span class="n">e_ref</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;reference&quot;</span><span class="p">]</span>
+        <span class="n">e_ref</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">reactions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"reference"</span><span class="p">]</span>
         <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="n">mae_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">e_calc</span> <span class="o">-</span> <span class="n">e_ref</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">mae_all</span><span class="p">,</span> <span class="n">e_calc</span><span class="p">,</span> <span class="n">e_ref</span>
@@ -526,11 +565,11 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">delete_systems_from_reactions</span><span class="p">(</span><span class="n">reactions</span><span class="p">,</span> <span class="n">systems2remove</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Remove all reactions which contains given systems.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Remove all reactions which contains given systems."""</span>
     <span class="n">rs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">reactions</span><span class="p">:</span>
         <span class="n">nottoremove</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">r</span><span class="p">[</span><span class="s2">&quot;systems&quot;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">r</span><span class="p">[</span><span class="s2">"systems"</span><span class="p">]:</span>
             <span class="k">if</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">systems2remove</span><span class="p">:</span>
                 <span class="n">nottoremove</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="k">if</span> <span class="n">nottoremove</span><span class="p">:</span>
@@ -543,26 +582,26 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot_dev_histogram</span><span class="p">(</span><span class="n">e_rpa</span><span class="p">,</span> <span class="n">e_dft</span><span class="p">,</span> <span class="n">e_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_dft</span><span class="p">,</span> <span class="n">xc</span><span class="p">,</span> <span class="n">max_range</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Plot histogram for deviations from reference reaction energies - PBE/PBE0 vs RPA@PBE/RPA@PBE0.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Plot histogram for deviations from reference reaction energies - PBE/PBE0 vs RPA@PBE/RPA@PBE0."""</span>
     <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
 
     <span class="n">ydft</span> <span class="o">=</span> <span class="n">e_dft</span> <span class="o">-</span> <span class="n">e_ref</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ydft</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orangered&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ydft</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">histtype</span> <span class="o">=</span> <span class="s1">&#39;step&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">lw</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ydft</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'orangered'</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ydft</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">histtype</span> <span class="o">=</span> <span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'k'</span><span class="p">,</span> <span class="n">lw</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
 
     <span class="n">yrpa</span> <span class="o">=</span> <span class="n">e_rpa</span> <span class="o">-</span> <span class="n">e_ref</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">yrpa</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;dodgerblue&#39;</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;RPA@</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">yrpa</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">histtype</span> <span class="o">=</span> <span class="s1">&#39;step&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span> <span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">lw</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">yrpa</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'dodgerblue'</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">'RPA@</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">yrpa</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">histtype</span> <span class="o">=</span> <span class="s1">'step'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'k'</span> <span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="p">,</span> <span class="n">max_range</span><span class="p">),</span> <span class="n">lw</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
 
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Deviation&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'Count'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'Deviation'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="n">max_range</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">max_range</span><span class="o">+</span><span class="mf">0.1</span><span class="p">)</span>
 
     <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.94</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;MAE[</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s2">]=</span><span class="si">{</span><span class="n">mae_dft</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;medium&quot;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.88</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;MAE[RPA@</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s2">]=</span><span class="si">{</span><span class="n">mae_rpa</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;medium&quot;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.94</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"MAE[</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s2">]=</span><span class="si">{</span><span class="n">mae_dft</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.88</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"MAE[RPA@</span><span class="si">{</span><span class="n">xc</span><span class="si">}</span><span class="s2">]=</span><span class="si">{</span><span class="n">mae_rpa</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
 
     <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -574,25 +613,25 @@ document.write(`
 <h3>PBE and RPA&#64;PBE<a class="headerlink" href="#pbe-and-rpa-pbe" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASIS_T</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Be&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;B&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;C&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;N&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;O&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;F&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Al&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Si&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;P&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;S&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Cl&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pwCVTZ&quot;</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASIS_T</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"H"</span><span class="p">:</span>  <span class="s2">"aug-cc-pVTZ"</span><span class="p">,</span>
+           <span class="s2">"Be"</span><span class="p">:</span> <span class="s2">"aug-cc-pVTZ"</span><span class="p">,</span>
+           <span class="s2">"B"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"C"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"N"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"O"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"F"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"Al"</span><span class="p">:</span> <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"Si"</span><span class="p">:</span> <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"P"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"S"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">,</span>
+           <span class="s2">"Cl"</span><span class="p">:</span> <span class="s2">"aug-cc-pwCVTZ"</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reactions</span> <span class="o">=</span> <span class="n">delete_systems_from_reactions</span><span class="p">(</span><span class="n">W4_11RE</span><span class="o">.</span><span class="n">reactions</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;c2&quot;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reactions</span> <span class="o">=</span> <span class="n">delete_systems_from_reactions</span><span class="p">(</span><span class="n">W4_11RE</span><span class="o">.</span><span class="n">reactions</span><span class="p">,</span> <span class="p">[</span><span class="s2">"c2"</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -601,24 +640,24 @@ document.write(`
 <h4>aug-cc-pwCVTZ orbital basis set<a class="headerlink" href="#aug-cc-pwcvtz-orbital-basis-set" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE_T.json&quot;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reading results from W4-11_PBE_T.json&#39;</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE_T.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">"json/W4-11_PBE_T.json"</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Reading results from W4-11_PBE_T.json'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE_T.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="p">(</span><span class="n">etot_pbe</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">etot_pbe</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">etot_rpa</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">pbar</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">system</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>
-        <span class="n">e_pbe</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;atoms&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;coords&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;charge&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;spin&quot;</span><span class="p">],</span>
+        <span class="n">e_pbe</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"atoms"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"coords"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"charge"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"spin"</span><span class="p">],</span>
                                        <span class="n">BASIS_T</span><span class="p">,</span>
-                                       <span class="s2">&quot;PBE&quot;</span><span class="p">)</span>
+                                       <span class="s2">"PBE"</span><span class="p">)</span>
         <span class="n">etot_pbe</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_pbe</span>
         <span class="n">etot_rpa</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_rpa</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;json/W4-11_PBE_T.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'json/W4-11_PBE_T.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="n">etot_pbe</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">),</span> <span class="n">file_obj</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -639,12 +678,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe</span><span class="p">,</span> <span class="s2">&quot;PBE&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe</span><span class="p">,</span> <span class="s2">"PBE"</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/099a2e6331828a9d0caeee58d8f85ec3c468a372ba7372fc992b504d181a6f0d.png" src="../_images/099a2e6331828a9d0caeee58d8f85ec3c468a372ba7372fc992b504d181a6f0d.png" />
+<img alt="../_images/d047f9fbaae24a789e9797e4892c3c24a21828f3823e1334ce5dc27de7a7e87e.png" src="../_images/d047f9fbaae24a789e9797e4892c3c24a21828f3823e1334ce5dc27de7a7e87e.png" />
 </div>
 </div>
 </section>
@@ -652,42 +691,42 @@ document.write(`
 <h4>aug-cc-pwCVQZ orbital basis set<a class="headerlink" href="#aug-cc-pwcvqz-orbital-basis-set" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASIS_Q</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Be&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;B&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;C&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;N&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;O&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;F&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Al&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Si&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;P&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;S&quot;</span><span class="p">:</span>  <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;Cl&quot;</span><span class="p">:</span> <span class="s2">&quot;aug-cc-pwCVQZ&quot;</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BASIS_Q</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"H"</span><span class="p">:</span>  <span class="s2">"aug-cc-pVQZ"</span><span class="p">,</span>
+           <span class="s2">"Be"</span><span class="p">:</span> <span class="s2">"aug-cc-pVQZ"</span><span class="p">,</span>
+           <span class="s2">"B"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"C"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"N"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"O"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"F"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"Al"</span><span class="p">:</span> <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"Si"</span><span class="p">:</span> <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"P"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"S"</span><span class="p">:</span>  <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">,</span>
+           <span class="s2">"Cl"</span><span class="p">:</span> <span class="s2">"aug-cc-pwCVQZ"</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE_Q.json&quot;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reading results from W4-11_PBE_Q.json&#39;</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE_Q.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">"json/W4-11_PBE_Q.json"</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Reading results from W4-11_PBE_Q.json'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE_Q.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="p">(</span><span class="n">etot_pbe</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">etot_pbe</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">etot_rpa</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">pbar</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">system</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>
-        <span class="n">e_pbe</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;atoms&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;coords&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;charge&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;spin&quot;</span><span class="p">],</span>
+        <span class="n">e_pbe</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"atoms"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"coords"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"charge"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"spin"</span><span class="p">],</span>
                                        <span class="n">BASIS_Q</span><span class="p">,</span>
-                                       <span class="s2">&quot;PBE&quot;</span><span class="p">)</span>
+                                       <span class="s2">"PBE"</span><span class="p">)</span>
         <span class="n">etot_pbe</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_pbe</span>
         <span class="n">etot_rpa</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_rpa</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;json/W4-11_PBE_Q.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'json/W4-11_PBE_Q.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="n">etot_pbe</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">),</span> <span class="n">file_obj</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -708,12 +747,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe</span><span class="p">,</span> <span class="s2">&quot;PBE&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe</span><span class="p">,</span> <span class="s2">"PBE"</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/555d81508fb06afc44b914d5f97f0c3b18a6f2d7024e3bb57fb7c9d3fb2ade3f.png" src="../_images/555d81508fb06afc44b914d5f97f0c3b18a6f2d7024e3bb57fb7c9d3fb2ade3f.png" />
+<img alt="../_images/22413ba7633d9959ac6390d083009c3ef647a31247976d8c031cdc186c538ab0.png" src="../_images/22413ba7633d9959ac6390d083009c3ef647a31247976d8c031cdc186c538ab0.png" />
 </div>
 </div>
 </section>
@@ -722,7 +761,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">basis_set_extrapolation</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">n1</span><span class="o">=</span><span class="mf">3.</span><span class="p">,</span> <span class="n">n2</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Basis set extrapolation.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Basis set extrapolation."""</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">e1</span><span class="o">*</span><span class="n">n1</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">e2</span><span class="o">*</span><span class="n">n2</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">n1</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="n">n2</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -730,9 +769,9 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE_T.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE_T.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
     <span class="p">(</span><span class="n">etot_pbe_t</span><span class="p">,</span> <span class="n">etot_rpa_t</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE_Q.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE_Q.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
     <span class="p">(</span><span class="n">etot_pbe_q</span><span class="p">,</span> <span class="n">etot_rpa_q</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -759,12 +798,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa_cbs</span><span class="p">,</span> <span class="n">mae_pbe_cbs</span><span class="p">,</span> <span class="s2">&quot;PBE&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa_cbs</span><span class="p">,</span> <span class="n">mae_pbe_cbs</span><span class="p">,</span> <span class="s2">"PBE"</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e483bf04d4ac5dd27d0454d186818726bea06fb2b0e8b69e537c6bf910215564.png" src="../_images/e483bf04d4ac5dd27d0454d186818726bea06fb2b0e8b69e537c6bf910215564.png" />
+<img alt="../_images/9108f665b927cdb8672ab32377df3de22672981a3685c6bbeeaea387a966ff0e.png" src="../_images/9108f665b927cdb8672ab32377df3de22672981a3685c6bbeeaea387a966ff0e.png" />
 </div>
 </div>
 </section>
@@ -775,24 +814,24 @@ document.write(`
 <h4>aug-cc-pwCVTZ orbital basis set<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE0_T.json&quot;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reading results from W4-11_PBE0_T.json&#39;</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE0_T.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">"json/W4-11_PBE0_T.json"</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Reading results from W4-11_PBE0_T.json'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE0_T.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="p">(</span><span class="n">etot_pbe0</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">etot_pbe0</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">etot_rpa</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">pbar</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">system</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>
-        <span class="n">e_pbe0</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;atoms&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;coords&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;charge&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;spin&quot;</span><span class="p">],</span>
+        <span class="n">e_pbe0</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"atoms"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"coords"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"charge"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"spin"</span><span class="p">],</span>
                                        <span class="n">BASIS_T</span><span class="p">,</span>
-                                       <span class="s2">&quot;PBE0&quot;</span><span class="p">)</span>
+                                       <span class="s2">"PBE0"</span><span class="p">)</span>
         <span class="n">etot_pbe0</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_pbe0</span>
         <span class="n">etot_rpa</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_rpa</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;json/W4-11_PBE0_T.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'json/W4-11_PBE0_T.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="n">etot_pbe0</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">),</span> <span class="n">file_obj</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -813,12 +852,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe0</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe0</span><span class="p">,</span> <span class="s2">&quot;PBE0&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe0</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe0</span><span class="p">,</span> <span class="s2">"PBE0"</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/53e394f2918064d37ea3671dc784287b3e39ba89b82c104ed746c34a53f01e3e.png" src="../_images/53e394f2918064d37ea3671dc784287b3e39ba89b82c104ed746c34a53f01e3e.png" />
+<img alt="../_images/4aa3847954ff3d1a1b40d820027c75aa645a16ffe626804c507a4d927611ea8b.png" src="../_images/4aa3847954ff3d1a1b40d820027c75aa645a16ffe626804c507a4d927611ea8b.png" />
 </div>
 </div>
 </section>
@@ -826,24 +865,24 @@ document.write(`
 <h4>aug-cc-pwCVQZ orbital basis set<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE0_Q.json&quot;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reading results from W4-11_PBE0_Q.json&#39;</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE0_Q.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s2">"json/W4-11_PBE0_Q.json"</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Reading results from W4-11_PBE0_Q.json'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE0_Q.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="p">(</span><span class="n">etot_pbe0</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">etot_pbe0</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">etot_rpa</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">pbar</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">system</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>
-        <span class="n">e_pbe0</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;atoms&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;coords&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;charge&quot;</span><span class="p">],</span>
-                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;spin&quot;</span><span class="p">],</span>
+        <span class="n">e_pbe0</span><span class="p">,</span> <span class="n">e_rpa</span> <span class="o">=</span> <span class="n">calc_one_system</span><span class="p">(</span><span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"atoms"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"coords"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"charge"</span><span class="p">],</span>
+                                       <span class="n">W4_11</span><span class="o">.</span><span class="n">systems</span><span class="p">[</span><span class="n">system</span><span class="p">][</span><span class="s2">"spin"</span><span class="p">],</span>
                                        <span class="n">BASIS_Q</span><span class="p">,</span>
-                                       <span class="s2">&quot;PBE0&quot;</span><span class="p">)</span>
+                                       <span class="s2">"PBE0"</span><span class="p">)</span>
         <span class="n">etot_pbe0</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_pbe0</span>
         <span class="n">etot_rpa</span><span class="p">[</span><span class="n">system</span><span class="p">]</span> <span class="o">=</span> <span class="n">e_rpa</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;json/W4-11_PBE0_Q.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'json/W4-11_PBE0_Q.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
         <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="n">etot_pbe0</span><span class="p">,</span> <span class="n">etot_rpa</span><span class="p">),</span> <span class="n">file_obj</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -864,12 +903,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe0</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe0</span><span class="p">,</span> <span class="s2">&quot;PBE0&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe0</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa</span><span class="p">,</span> <span class="n">mae_pbe0</span><span class="p">,</span> <span class="s2">"PBE0"</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/468e5971b171a7a05e9408c43a3ba3fd94dca3d011aeff067cca393d2dcdb960.png" src="../_images/468e5971b171a7a05e9408c43a3ba3fd94dca3d011aeff067cca393d2dcdb960.png" />
+<img alt="../_images/78356042d5d3cd1be2046fc021534d676c41bd0114b9a5025e8ea710dae31ee8.png" src="../_images/78356042d5d3cd1be2046fc021534d676c41bd0114b9a5025e8ea710dae31ee8.png" />
 </div>
 </div>
 </section>
@@ -877,9 +916,9 @@ document.write(`
 <h4>Complete basis set extrapolation<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE0_T.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE0_T.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
     <span class="p">(</span><span class="n">etot_pbe0_t</span><span class="p">,</span> <span class="n">etot_rpa_t</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;json/W4-11_PBE0_Q.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"json/W4-11_PBE0_Q.json"</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_obj</span><span class="p">:</span>
     <span class="p">(</span><span class="n">etot_pbe0_q</span><span class="p">,</span> <span class="n">etot_rpa_q</span><span class="p">)</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_obj</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -906,12 +945,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe0</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa_cbs</span><span class="p">,</span> <span class="n">mae_pbe0_cbs</span><span class="p">,</span> <span class="s2">&quot;PBE0&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_dev_histogram</span><span class="p">(</span><span class="n">re_rpa</span><span class="p">,</span> <span class="n">re_pbe0</span><span class="p">,</span> <span class="n">re_ref</span><span class="p">,</span> <span class="n">mae_rpa_cbs</span><span class="p">,</span> <span class="n">mae_pbe0_cbs</span><span class="p">,</span> <span class="s2">"PBE0"</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/820efadd5d2a62be055ba3cd98bdced268bccb870b22f508fa1038cefc6e3f6f.png" src="../_images/820efadd5d2a62be055ba3cd98bdced268bccb870b22f508fa1038cefc6e3f6f.png" />
+<img alt="../_images/459236513c40c4231b289378ff3df9cc4329c480b2e7e4af3a596c4db612d888.png" src="../_images/459236513c40c4231b289378ff3df9cc4329c480b2e7e4af3a596c4db612d888.png" />
 </div>
 </div>
 </section>
@@ -974,15 +1013,17 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w4-11re-dataset">W4-11RE dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pbe-and-rpa-pbe">PBE and RPA@PBE</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aug-cc-pwcvtz-orbital-basis-set">aug-cc-pwCVTZ orbital basis set</a></li>
@@ -1046,8 +1087,8 @@ By Egor Trushin
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>
