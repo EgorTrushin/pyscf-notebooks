@@ -20,4 +20,4 @@ package = false
 line-length = 120
 target-version = "py312"
 # long-line geometry data; verbatim copies from PyOEP, linted there
-extend-exclude = ["notebooks/sets", "notebooks/utils"]
+extend-exclude = ["notebooks/sets"]
