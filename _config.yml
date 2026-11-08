@@ -14,7 +14,7 @@ exclude_patterns: [.venv]
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
-  timeout: 120
+  timeout: 600  # per cell; the slowest cell (gga_xc_potential) takes ~70 s on 4 cores
 
 launch_buttons:
   notebook_interface: jupyterlab
